@@ -1,0 +1,71 @@
+*
+{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body
+{
+    background-color: rgba(211, 211, 211, 0.673);
+}
+.my-form
+{
+    background-color: white;
+    width: 400px;
+    border: 1px solid lightblue;
+    padding: 20px;
+    margin: 100px auto;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.my-form div
+{
+    width: 100%;
+    margin-bottom: 20px;
+}
+.my-form div input
+{
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+    padding: 10px;
+    border: 1px solid lightblue;
+}
+
+.message
+{
+    border: 1px solid red;
+    background-color: rgba(255, 0, 0, 0.616);
+    color: white;
+    font-size: 10px;
+    font-weight: bold;
+    padding: 10px;
+    text-align: center;
+    display: none;
+}
+
+.btn button
+{
+    background-color: rgb(12, 137, 12);
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 5px;
+    padding: 10px 20px;
+    border: none;
+    margin: 5px 130px;
+}
+
+.btn button:hover
+{
+    cursor: pointer;
+}
+
+.btn button:active
+{
+    background-color: rgba(12, 137, 12, 0.763);
+}

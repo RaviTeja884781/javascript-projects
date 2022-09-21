@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      div img {
+        width: 400px;
+        height: 400px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+      #second {
+        width: 5px;
+        height: 240px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+      #second div:first-child {
+        background-color: black;
+        width: 5px;
+        height: 120px;
+      }
+      #second div:last-child {
+        background-color: transparent;
+        width: 5px;
+        height: 120px;
+      }
+
+      #minutes {
+        width: 5px;
+        height: 180px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+      #minutes div:first-child {
+        background-color: black;
+        width: 5px;
+        height: 90px;
+      }
+      #minutes div:last-child {
+        background-color: transparent;
+        width: 5px;
+        height: 90px;
+      }
+
+      #hours {
+        width: 5px;
+        height: 140px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+      #hours div:first-child {
+        background-color: black;
+        width: 5px;
+        height: 70px;
+      }
+      #hours div:last-child {
+        background-color: transparent;
+        width: 5px;
+        height: 70px;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <img src="./clock.png" alt="" />
+    </div>
+
+    <div id="second">
+      <div></div>
+      <div></div>
+    </div>
+
+    <div id="minutes">
+      <div></div>
+      <div></div>
+    </div>
+
+    <div id="hours">
+      <div></div>
+      <div></div>
+    </div>
+
+    <script>
+      function displayTime() {
+        let currentTime = new Date();
+        let seconds = currentTime.getSeconds();
+        let minutes = currentTime.getMinutes();
+        let hours = currentTime.getHours();
+
+        let sec = document.getElementById("second");
+        sec.style.transform = `translate(-50%,-50%) rotate(${seconds * 6}deg)`;
+
+        let min = document.getElementById("minutes");
+        min.style.transform = `translate(-50%,-50%) rotate(${minutes * 6}deg)`;
+
+        let hrs = document.getElementById("hours");
+        hrs.style.transform = `translate(-50%,-50%) rotate(${
+          hours * 30 + minutes * 0.5
+        }deg)`;
+      }
+      setInterval(() => {
+        displayTime();
+      }, 1000);
+    </script>
+  </body>
+</html>

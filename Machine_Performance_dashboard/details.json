@@ -1,0 +1,43 @@
+[{
+    "MACHINE": "IMM-01",
+    "PERFORMANCE": "98",
+    "RUNNING": "2h: 30 m: 15 s",
+    "PARTS": "1250",
+    "STATUS": "RUNNING"
+},
+{
+    "MACHINE": "IMM-02",
+    "PERFORMANCE": "70",
+    "RUNNING": "1h: 30 m: 15 s",
+    "PARTS": "2450",
+    "STATUS": "RUNNING"
+},
+{
+    "MACHINE": "IMM-03",
+    "PERFORMANCE": "28",
+    "RUNNING": "30 m: 15 s",
+    "PARTS": "24",
+    "STATUS": "STOPPED"
+},
+{
+    "MACHINE": "IMM-04",
+    "PERFORMANCE": "98",
+    "RUNNING": "2h: 30 m: 15 s",
+    "PARTS": "1250",
+    "STATUS": "RUNNING"
+},
+{
+    "MACHINE": "IMM-05",
+    "PERFORMANCE": "70",
+    "RUNNING": "1h: 30 m: 15 s",
+    "PARTS": "2450",
+    "STATUS": "RUNNING"
+},
+{
+    "MACHINE": "IMM-06",
+    "PERFORMANCE": "28",
+    "RUNNING": "30 m: 15 s",
+    "PARTS": "24",
+    "STATUS": "STOPPED"
+}
+]

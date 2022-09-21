@@ -1,0 +1,54 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+body,html{
+    width: 100%;
+    overflow-x:hidden;
+}
+body{
+    background-color: #efefef;
+}
+.users{
+    margin: 20px;
+    display:flex;
+    flex-direction:row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.user-card{
+    height:372px;
+    width: 252px;
+    margin: 20px;
+    position: relative;
+    box-shadow:1px 1px 30px 1px rgba(180, 181,181, 0.725);
+    border-radius: 10px 10px 0px 0px ;
+}
+.user-card img{
+    width: 100%;
+    height: 300px;
+    border-radius:10px 10px 0px 0px;
+}
+.user-icons{
+    text-align: center;
+    padding: 5px;
+    position: absolute;
+    bottom: 72px;
+    width: 100%;
+    background-color: rgba(255,255,255,0.713);
+    visibility: hidden;
+    transition: all 1s;
+}
+.user-card:hover .user-icons{
+    visibility: visible;
+}
+.user-icons i{
+    margin-left:24px;
+    font-size: 23px;
+}
+.user-card h3,.user-card p{
+    text-align: center;
+}
